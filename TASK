@@ -1,0 +1,19 @@
+//3.Write a “person” class to hold all the details.
+
+class Person{
+    constructor(a,b,c,d,e,f,g,h){
+        this.Name=a;
+        this.DOB=b;
+        this.Blood=c;
+        this.Gender=d;
+        this.Occupation=e;
+        this.Address=f;
+        this.Phone=g;
+        this.Email=h;
+    }
+    sud(){
+        return `${this.Name},${this.Gender},${this.Email}`
+    }
+};
+var details = new Person("Sudarsan",5/3/2000,"A+","Male","Developer","10/54 vinayagr street, salem", 8379820483, "sudsdic566@gmail.com");
+console.log(details.sud());
