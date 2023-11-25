@@ -1,3 +1,41 @@
+//2 Question
+
+class Circle {
+    constructor(double,string){
+        this.radius=double;
+        this.colour=string;
+    };
+    getradius(){
+        return `Get Radius: ${this.radius}`;
+    };
+    setradius(){
+        return `Set Radius: ${this.radius}=radius`;
+    };
+    getcolour(){
+        return `Get Colour: ${this.colour}`;
+    };
+    setcolour(){
+        return `Set colour: ${this.colour}=colour`;
+    };
+    tostring(){
+        return `To String: Radius: ${this.radius} Colour: ${this.colour}`;
+    };
+    getarea(){
+        return `Area of circle is: ${2*Math.PI*this.radius}`;
+    };
+    getcircumference(){
+        return `Cricumference of circle is: ${Math.PI*this.radius*this.radius}`;
+    };
+};
+var sud= new Circle(1.0,"red");
+console.log(sud.getradius());
+console.log(sud.setradius());
+console.log(sud.getcolour());
+console.log(sud.setcolour());
+console.log(sud.tostring());
+console.log(sud.getarea());
+console.log(sud.getcircumference());
+
 //3.Write a “person” class to hold all the details.
 
 class Person{
