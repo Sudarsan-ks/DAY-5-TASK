@@ -17,3 +17,19 @@ class Person{
 };
 var details = new Person("Sudarsan",5/3/2000,"A+","Male","Developer","10/54 vinayagr street, salem", 8379820483, "sudsdic566@gmail.com");
 console.log(details.sud());
+
+//4.write a class to calculate the uber price.
+
+class Uberprice{
+    constructor(a,b,c,d){
+        this.baseprice=a;
+        this.customername=b;
+        this.customercity=c;
+        this.uberrate=d;
+    }
+    sud(){
+        return `Hello ${this.customername},Your uberprice for salem to ${this.customercity} is ${this.uberrate*this.baseprice}`
+    }
+};
+var Pricedetails= new Uberprice(2.4,"Sudarsan","Chennai",395);
+console.log(Pricedetails.sud());
